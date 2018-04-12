@@ -1,0 +1,18 @@
+#navbar
+home: Accueil
+resume: Bio
+gallery: Galerie
+tchat: Chat
+contact: Contact
+connexion: Connexion
+logout: Déconnexion
+profile: Profil
+
+#dump
+sended: Votre message a été envoyé avec succès !
+
+
+
+#footer
+rightsreserved: Tous droits réservés
+websitepowered: Ce site a été développé en Symfony

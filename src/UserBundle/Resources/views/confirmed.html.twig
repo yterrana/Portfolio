@@ -1,0 +1,17 @@
+{% trans_default_domain 'user' %}
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+  <section>
+    <div class="section-inner custom-page-content">
+      <div class="page-header color-1">
+        <h2>{{ 'accountcreated'|trans }}</h2>
+      </div>
+      <div class="page-content">
+        {% block fos_user_content %}
+        {% endblock fos_user_content %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

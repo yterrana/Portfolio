@@ -1,0 +1,8 @@
+#tchat
+
+tchat: Chat
+on: En
+line: ligne
+message: Message
+sendmsg: Envoyer
+me: Moi

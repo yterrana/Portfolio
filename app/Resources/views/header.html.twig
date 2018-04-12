@@ -1,0 +1,61 @@
+<!-- Header -->
+<header id="site_header" class="header mobile-menu-hide">
+  <div class="header-content">
+    <div class="site-title-block mobile-hidden">
+      <div class="site-title">Yvan <span>Terrana</span></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="site-nav">
+      <!-- Main menu -->
+      <ul id="nav" class="site-main-menu">
+        {% if is_granted('IS_AUTHENTICATED_FULLY') == false %}
+        <li {% if app.request.attributes.get('_route') is same as('home') %}class="active" {% endif %}>
+          <a  href="{{ path('home') }}">{{ 'home'|trans }}</a><!-- href value = data-id without # of .pt-page. -->
+        </li>
+        {% endif %}
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') == false %}
+        <li {% if app.request.attributes.get('_route') is same as('resume') %}class="active" {% endif %}>
+          <a  href="{{ path('resume') }}">{{ 'resume'|trans }}</a>
+        </li>
+        {% endif %}
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') == false %}
+        <li {% if app.request.attributes.get('_route') is same as('gallery') %}class="active" {% endif %}>
+          <a href="{{ path('gallery') }}">{{ 'gallery'|trans }}</a>
+        </li>
+        {% endif %}
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <li {% if app.request.attributes.get('_route') is same as('tchat') %}class="active" {% endif %}>
+          <a class="pt-trigger" href="{{ path('tchat') }}">{{ 'tchat'|trans }}</a>
+        </li>
+        {% endif %}
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') == false %}
+        <li {% if app.request.attributes.get('_route') is same as('contact') %}class="active" {% endif %}>
+          <a class="pt-trigger" href="{{ path('contact') }}">{{ 'contact'|trans }}</a>
+        </li>
+        {% endif %}
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+          <li {% if app.request.attributes.get('_route') is same as('profile') %}class="active" {% endif %}>
+            <a class="pt-trigger" href="{{ path('profile') }}">{{ 'profile'|trans }}</a>
+          </li>
+        {% endif %}
+
+        <li {% if app.request.attributes.get('_route') is same as('fos_user_security_login') %}class="active" {% endif %}>
+          {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a class="pt-trigger" href="{{ logout_path() }}"><i class="fa fa-sign-out"></i> {{ 'logout'|trans }}</a>
+          {% else %}
+            <a class="pt-trigger" href="{{ path('fos_user_security_login') }}"><i class="fa fa-sign-in"></i> {{ 'connexion'|trans }}</a>
+          {% endif %}
+        </li>
+      </ul>
+      <!-- /Main menu -->
+    </div>
+    <!-- Navigation -->
+  </div>
+</header>
+<!-- /Header -->

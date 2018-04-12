@@ -1,0 +1,106 @@
+{% trans_default_domain 'core' %}
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<!-- Contact Subpage -->
+<section>
+  <div class="section-inner custom-page-content">
+    <div class="page-header color-1">
+      <h2>{{ 'contact'|trans }}</h2>
+    </div>
+    <div class="page-content">
+
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <div class="block-title">
+            <h3>{{ 'find'|trans }}-<span>{{ 'me'|trans }}</span></h3>
+          </div>
+          <!-- Google Map -->
+          <div id="map" class="map"></div>
+          <!-- End of Google Map -->
+
+          <div class="contact-info-block">
+            <div class="ci-icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="ci-text">
+              <h5>{{ 'city'|trans }}</h5>
+            </div>
+          </div>
+          <div class="contact-info-block">
+            <div class="ci-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="ci-text">
+              <h5>yterrana@hotmail.fr</h5>
+            </div>
+          </div>
+          <div class="contact-info-block">
+            <div class="ci-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="ci-text">
+              <h5>0695598659</h5>
+            </div>
+          </div>
+          <div class="contact-info-block">
+            <div class="ci-icon">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="ci-text">
+              <h5>{{ 'student'|trans }}</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6">
+          <div class="block-title">
+            <h3>{{ 'contactme'|trans }}-<span>{{ 'me'|trans }}</span></h3>
+            {{ include('::flash.html.twig') }}
+          </div>
+          {{ form_start(form) }}
+
+             <div class="messages"></div>
+
+             <div class="controls">
+               <div class="form-group form-group-with-icon">
+                 <i class="fa fa-user"></i>
+                 <label>{{ 'fullname'|trans }}</label>
+                 {{ form_widget(form.fullname, {'attr': {'class': 'form-control'}}) }}
+                 {{ form_errors(form.fullname)}}
+                 <div class="form-control-border"></div>
+                 <div class="help-block with-errors"></div>
+               </div>
+
+               <div class="form-group form-group-with-icon">
+                 <i class="fa fa-envelope"></i>
+                 <label>{{ 'email'|trans }}</label>
+                 {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                 {{ form_errors(form.email)}}
+                 <div class="form-control-border"></div>
+                 <div class="help-block with-errors"></div>
+               </div>
+
+               <div class="form-group form-group-with-icon">
+                 <i class="fa fa-comment"></i>
+                 <label>{{ 'message'|trans }}</label>
+                 {{ form_widget(form.message, {'attr': {'class': 'form-control'}}) }}
+                 {{ form_errors(form.message)}}
+                 <div class="form-control-border"></div>
+                 <div class="help-block with-errors"></div>
+               </div>
+
+               <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+
+               <input type="submit" class="button btn-send" value="{{ 'sendmsg'|trans }}">
+             </div>
+           {{ form_end(form) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Subpage -->
+{% endblock %}

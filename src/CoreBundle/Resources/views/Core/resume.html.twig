@@ -1,0 +1,171 @@
+{% trans_default_domain 'core' %}
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <!-- Resume Subpage -->
+    <section>
+      <div class="section-inner custom-page-content">
+        <div class="page-header color-1">
+          <h2>{{ 'resume'|trans }}</h2>
+        </div>
+        <div class="page-content">
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>{{ 'education'|trans }}</h3>
+                </div>
+
+                <div class="timeline">
+                  <!-- Education 1 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">{{ 'bts'|trans }}</h4>
+                    <span class="item-period">2016-2018</span>
+                    <span class="item-small">{{ 'condorcet'|trans }}</span>
+                    <p class="item-description">{{ 'btstext'|trans }}</p>
+                  </div>
+                  <!-- / Education 1 -->
+
+                  <!-- Education 2 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">{{ 'bac'|trans }}</h4>
+                    <span class="item-period">2016</span>
+                    <span class="item-small">{{ 'condorcet'|trans }}</span>
+                    <p class="item-description">{{ 'bactext'|trans }}</p>
+                  </div>
+                  <!-- / Education 2 -->
+
+                  <!-- Education 3 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">{{ 'brevet'|trans }}</h4>
+                    <span class="item-period">2013</span>
+                    <span class="item-small">{{ 'pierreadt'|trans }}</span>
+                    <p class="item-description">{{ 'brevet_text'|trans }}</p>
+                  </div>
+                  <!-- / Education 3 -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>{{ 'experience'|trans }}</h3>
+                </div>
+
+                <div class="timeline">
+                  <!-- Experience 1 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">{{ 'summerjob'|trans }}</h4>
+                    <span class="item-period">{{ 'august'|trans }} 2017</span>
+                    <span class="item-small">{{ 'saarstahl'|trans }}</span>
+                    <p class="item-description">{{ 'summerjobtext'|trans }}</p>
+                  </div>
+                  <!-- / Experience 1 -->
+
+                  <!-- Experience 2 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">{{ 'stage'|trans }}</h4>
+                    <span class="item-period">29/05/17 - 07/07/17</span>
+                    <span class="item-small">{{ 'gdvacances'|trans }}</span>
+                    <p class="item-description">{{ 'stagetext'|trans }}</p>
+                  </div>
+                  <!-- / Experience 2 -->
+
+                  <!-- Experience 3 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">{{ 'stage2'|trans }}<sup>{{ 'exp'|trans }}</sup></h4>
+                    <span class="item-period">{{ 'february'|trans }} 2013</span>
+                    <span class="item-small">{{ 'gdvacances'|trans }}</span>
+                    <p class="item-description">{{ 'stage2text'|trans }}</p>
+                  </div>
+                  <!-- / Experience 3 -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>{{ 'levels'|trans }} <span>{{ 'language'|trans }}</span></h3>
+                </div>
+
+                <div class="skills-info">
+                  <h4>{{ 'french'|trans }}</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-0"></div>
+                  </div>
+
+                  <h4>{{ 'italian'|trans }}</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-0"></div>
+                  </div>
+
+                  <h4>{{ 'english'|trans }}</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-2"></div>
+                  </div>
+
+                  <h4>{{ 'german'|trans }}</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-3"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>{{ 'languages'|trans }} <span>{{ 'programmation'|trans }}</span></h3>
+                </div>
+
+                <div class="skills-info">
+                  <h4>HTML5/CSS3</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-4"></div>
+                  </div>
+
+                  <h4>PHP/MySQL</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-5"></div>
+                  </div>
+
+                  <h4>C++</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-5"></div>
+                  </div>
+
+                  <h4>Symfony</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-7"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Download Resume Button -->
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="block">
+                <div class="center download-resume">
+                  <a href="{{ asset('cv/cv.docx') }}" class="btn btn-secondary">{{ 'downloadresume'|trans }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Download Resume Button -->
+
+        </div>
+      </div>
+    </section>
+    <!-- End of Resume Subpage -->
+{% endblock %}

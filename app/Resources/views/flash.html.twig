@@ -1,0 +1,11 @@
+{% for flashMessage in app.session.flashbag.get('success') %}
+
+  <div class="btn-success">{{ flashMessage|trans }}</div>
+
+{% endfor %}
+
+{% for flashMessage in app.session.flashbag.get('cancel') %}
+
+  <div class="btn-danger">{{ flashMessage|trans }}</div>
+
+{% endfor %}

@@ -1,0 +1,38 @@
+{% trans_default_domain 'user' %}
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+  <section>
+    <div class="section-inner custom-page-content">
+      <div class="page-header color-1">
+        <h2>{{ 'welcome'|trans }}, <span class="profileusername">{{ app.user.username }}</span> !</h2>
+      </div>
+      <div class="page-content">
+
+        <div class="container">
+          <div class="col-sm-6 col-md-6">
+            <div class="row">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row message-bubble">
+                      <p class="text-muted">Matt Townsen</p>
+                      <span>Why is yo shit so broke?</span>
+                    </div>
+                    <div class="row message-bubble">
+                      <p class="text-muted">Matt Townsen</p>
+                      <p>It Isn't'</p>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+{% endblock %}
+

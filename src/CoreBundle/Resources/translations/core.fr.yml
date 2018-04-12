@@ -1,0 +1,72 @@
+#home
+age: Âge
+country: Pays
+address: Adresse
+email: E-mail
+phone: Portable
+activity: Activité
+france: France
+student: Étudiant
+webmaster: Futur Webmaster
+actuallystudent: Actuellement étudiant
+about: À propos de
+me: moi
+aboutme: Salut! Je m'appelle Yvan Terrana. J'aime le développement Web et plus tard je veux être Webmaster. J'adore regarder le football et la formule 1. J'ai fait de la musique et je joue du piano.
+downloadresume: Télécharge mon CV
+
+#resume
+education: Formation
+experience: Expérience
+bts: Préparation BTS SN
+resume: Bio
+condorcet: Lycée CONDORCET de Schoeneck
+btstext: Je prépare actuellement un BTS Systèmes Numériques option Informatique et Réseaux sur 2 ans.
+bac: Baccaleuréat STI2D
+bactext: Obtention du baccalauréat STI2D avec mention BIEN.
+brevet: Brevet des collèges
+pierreadt: Collège Pierre ADT de Forbach
+brevet_text: Obtention du brevet des collèges avec mention BIEN.
+summerjob: Job d'été dans une métallurgie
+saarstahl: Saarstahl
+august: Août
+summerjobtext: Pendant tout le mois d'août j'ai travaillé dans une métallurgie à faire différentes tâches.
+stage: Stage de 6 semaines
+gdvacances: GD Vacances
+stagetext: J'ai réalisé un stage de 6 semaines dans le cadre de mon BTS dans une société de location saisonnière où j'ai notamment appris le framework Symfony.
+stage2: Stage 3
+exp: ème
+february: Février
+stage2text: Le stage a duré 4 jours afin de découvrir le métier de Webmaster.
+levels: Niveaux de
+language: langue
+french: Français
+italian: Italien
+english: Anglais
+german: Allemand
+languages: Langages de
+programmation: programmation
+
+#contact
+contact: Contact
+city: Forbach, FRANCE
+find: Trouvez
+contactme: Contactez
+sendmsg: Envoyer le message
+fullname: Nom prénom
+email: Adresse e-mail
+message: Message
+
+#gallery
+gallery: Galerie
+france: France
+italy: Italie
+germany: Allemagne
+spain: Espagne
+tunis: Tunisie
+egypt: Egypte
+domrep: République dominicaine
+
+#chat
+tchat: Chat
+
+

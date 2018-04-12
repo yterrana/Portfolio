@@ -1,0 +1,18 @@
+#connexion / registration
+connexion: Connexion
+authentification: Espace d'authentification
+to: Se
+connect: connecter
+s: S
+sign: inscrire
+rememberme: Se souvenir de moi
+registration: Créer un compte
+accountcreated: Compte crée avec succès !
+password: Mot de passe
+passwordrepeat: Répéter le mot de passe
+username: Pseudo
+email: Adresse e-mail
+confirmed: 'Félicitations %username%, votre compte est maintenant activé.'
+
+#profile
+welcome: Bienvenue
